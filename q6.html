@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Resultaten</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	   
+	
+</head>
+
+<body>
+<h1>Dit zijn de antwoorden die je hebt ingevuld:<h1>
+	<h2>
+	<script type = "text/javascript">
+        
+				var AllAnswers = document.cookie;
+				cookiearray = AllAnswers.split(';');
+				for(var i=0; i<cookiearray.length; i++) 
+				{
+				  Question = cookiearray[i].split('=')[0];
+				  Answer = cookiearray[i].split('=')[1];
+					var QuestionB = decodeURIComponent(Question);
+					var AnswerB = parseInt(Answer);	
+					alert("Antwoord nummer: " + AnswerB)
+				  document.write ("Op deze vraag : " + QuestionB + " gaf je dit antwoord : " + AnswerB + "<div>");
+					
+				}
+		
+			 function ShowCookie() {
+  			 alert(document.cookie);
+			 }			
+			 
+      	</script>   
+	</h2>
+	
+	<h2>Wil je meer te weten komen over wat dit betekent? Probeer de uitgebreide versie van de test met professionele begeleiding!</h2>
+
+	
+<form action="q5.html" name = "quiz">
+	
+<div>
+<a href="q4.html"><img src="/images/prev.png" width="400" height="150" alt=""></a>
+</div>
+
+</form>
+
+</body>
+</html>

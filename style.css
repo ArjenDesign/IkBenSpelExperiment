@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+h1
+{
+	font-family: Calibri;
+	text-align: center; 
+	font-size: 50px; 
+}
+
+h2
+{
+	font-family: Calibri;
+	text-align:center; 
+	font-size: 25px; 
+}
+
+h3
+{
+	font-family: Calibri;
+	text-align:center; 
+	font-size: 50px; 
+}
+
+h4
+{
+	font-family: Calibri;
+	text-align:left; 
+	font-size: 14px; 
+}
+
+
+/* HIDE RADIO */
+[type=radio]
+{ 
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img
+{
+	cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img
+{
+	border: 6px solid blue;
+	border-radius: 50%;
+	float:none;
+}
+
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+}

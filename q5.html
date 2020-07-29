@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vraag 2</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+	 <script type = "text/javascript">
+        
+            function WriteCookie() {
+			   Answer5Result = escape(document.quiz.challenges.value) + ";"; 
+               document.cookie = "Vraag5=" + Answer5Result + "path=/";
+			   document.forms["quiz"].submit();
+            }
+			 
+			 function ShowCookie() {
+  			 alert(document.cookie);
+			 }
+			 
+      	</script>      
+	
+</head>
+
+<body>
+	<h1>Wat zijn jouw uitdagingen voor de toekomst? Waar wil je aan werken?</h1>
+	
+<form action="q6.html" name = "quiz">
+	
+	<table style="width: 160px;" >
+<tbody>
+<tr>
+<td><label>
+  <input type="radio" name="challenges" value="1" checked>
+  <img src="images/__open-toegankelijk-eerlijk.png" width="160" height="125">
+	<h2>Open, Toegankelijk, Eerlijk</h2>
+</label></td>
+<td><label>
+  <input type="radio" name="challenges" value="2" checked>
+  <img src="images/__bijjezelfblijven-reflecteren.png" width="160" height="125">
+	<h2>Bij jezelf blijven, Reflecteren</h2>
+</label></td>
+<td><label>
+  <input type="radio" name="challenges" value="3" checked>
+  <img src="images/__oordeelloos-empatisch-respectvol.png" width="160" height="125">
+	<h2>Oordeelloos, Empathisch</h2>
+</label></td>
+<td><label>
+  <input type="radio" name="challenges" value="4" checked>
+  <img src="images/__bewust-wakker.png" width="160" height="125">
+	<h2>Bewust van anderen</h2>
+</label>
+</td>
+<td><label>
+  <input type="radio" name="challenges" value="5" checked>
+  <img src="images/__overgave-bescheiden.png" width="160" height="125">
+	<h2>Overgave, Bescheiden, Bereidwillig</h2>
+</label></td>
+</tr>
+<tr>
+<td><label>
+  <input type="radio" name="challenges" value="6" checked>
+  <img src="images/__nieuwedingenproberen-moedig.png" width="160" height="125">
+	<h2>Nieuwe dingen proberen</h2>
+</label></td>
+<td><label>
+  <input type="radio" name="challenges" value="7" checked>
+  <img src="images/__leergierig-flexibel-geduldig.png" width="160" height="125">
+	<h2>Leergierig, Flexibel, Geduldig</h2>
+</label></td>
+<td><label>
+  <input type="radio" name="challenges" value="8" checked>
+  <img src="images/__efficient-structuur-geordend.png" width="160" height="125">
+	<h2>Efficïent, Gestructureerd, Geordend</h2>
+</label></td>
+<td><label>
+  <input type="radio" name="challenges" value="9" checked>
+  <img src="images/__betrokken-verbindend-hulpvaardig.png" width="160" height="125">
+	<h2>Betrokken, Verbindend</h2>
+</label></td>
+<td>	
+<label>
+  <input type="radio" name="challenges" value="10" checked>
+  <img src="images/__autonoom-zichtbaar.png" width="160" height="125">
+	<h2>Autonoom, Zichtbaar zijn</h2>
+</label></td>
+</tr>
+</tbody>
+</table>
+
+
+	
+<div>
+<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+<a href="q4.html"><img src="images/prev.png" width="400" height="150" alt=""></a>
+</div>
+
+</form>
+
+</body>
+</html>
