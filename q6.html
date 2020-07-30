@@ -23,6 +23,13 @@
 				var Question6Answer = 0;
 				var QuestionCounter = 0;
 		
+				var Question1Text = 0;
+				var Question2Text = 0;
+				var Question3Text = 0;
+				var Question4Text = 0;
+				var Question5Text = 0;
+				var Question6Text = 0;
+		
 				cookiearray = AllAnswers.split(';');
 		
 				for(var i=0; i<cookiearray.length; i++) 
@@ -35,27 +42,164 @@
 					
 					if(QuestionB==1){
 					Question1Answer=AnswerB;
+						
+						if(AnswerB==1){
+							Question1Text="Creatief";
+						}
+
+						if(AnswerB==2){
+							Question1Text="Beschouwend";
+						}
+						
+						if(AnswerB==3){
+							Question1Text="Positief";
+						}
+						
+						if(AnswerB==4){
+							Question1Text="Op gevoel";
+						}
+						
+						if(AnswerB==5){
+							Question1Text="Feitelijk";
+						}
+						
+						if(AnswerB==6){
+							Question1Text="Negatief";
+						}
 					
+						
 					}
 					
 					if(QuestionB==2){
 					Question2Answer=AnswerB;
+						
+						if(AnswerB==1){
+							Question2Text="Grapjas";
+						}
+
+						if(AnswerB==2){
+							Question2Text="Held";
+						}
+						
+						if(AnswerB==3){
+							Question2Text="Kind";
+						}
+						
+						if(AnswerB==4){
+							Question2Text="Koning";
+						}
+						
+						if(AnswerB==5){
+							Question2Text="Liefhebber";
+						}
+						
+						if(AnswerB==6){
+							Question2Text="Schepper";
+						}
+						
+						if(AnswerB==7){
+							Question2Text="Tovenaar";
+						}
+
+						if(AnswerB==8){
+							Question2Text="Verzorger";
+						}
+						
+						if(AnswerB==9){
+							Question2Text="Provocateur";
+						}
+						
+						if(AnswerB==10){
+							Question2Text="Wijze";
+						}
+						
+						if(AnswerB==11){
+							Question2Text="Alleman";
+						}
+						
+						if(AnswerB==12){
+							Question2Text="Avonturier";
+						}
 					
 					}
 					
 					if(QuestionB==3){
-					Question3Answer=AnswerB;	
+					Question3Answer=AnswerB;
+						
+						if(AnswerB==1){
+							Question3Text="Ja";
+						}
+
+						if(AnswerB==2){
+							Question3Text="Nee";
+						}
 					
 					}
 					
 					if(QuestionB==4){
-					Question4Answer=AnswerB;	
+					Question4Answer=AnswerB;
+						
+						if(AnswerB==1){
+							Question4Text="Warm Grasgroen";
+						}
+
+						if(AnswerB==2){
+							Question4Text="Helder Koningsblauw";
+						}
+						
+						if(AnswerB==3){
+							Question4Text="Stralend Goudgeel";
+						}
+						
+						if(AnswerB==4){
+							Question4Text="Vurig Oranje";
+						}
 					
 					}
 					
 					if(QuestionB==5){
-					Question5Answer=AnswerB;	
-				
+					Question5Answer=AnswerB;
+						
+						if(AnswerB==1){
+							Question5Text="Open, toegankelijk, eerlijk";
+						}
+
+						if(AnswerB==2){
+							Question5Text="Bij jezelf blijven, reflecteren";
+						}
+						
+						if(AnswerB==3){
+							Question5Text="Oordeelloos, empatisch";
+						}
+						
+						if(AnswerB==4){
+							Question5Text="Bewust van anderen";
+						}
+						
+						if(AnswerB==5){
+							Question5Text="Overgave, bescheiden, bereidwillig";
+						}
+						
+						if(AnswerB==6){
+							Question5Text="Nieuwe dingen proberen";
+						}
+						
+						if(AnswerB==7){
+							Question5Text="Leergierig, flexibel, geduldig";
+						}
+
+						if(AnswerB==8){
+							Question5Text="Efficiënt, gestructureerd, geördend";
+						}
+						
+						if(AnswerB==9){
+							Question5Text="Betrokken, verbindend";
+						}
+						
+						if(AnswerB==10){
+							Question5Text="Autonoom, zichtbaar zijn";
+						}
+														
 					}				
 						
 					if(QuestionCounter==5){
@@ -65,6 +209,8 @@
 				}
 		
 			function WriteResults() {
+				
+				document.write ("Je antwoord op vraag 1 was " + Question1Text + "<br> Je antwoord op vraag 2 was " + Question2Text + "<br> Je antwoord op vraag 3 was " + Question3Text + "<br> Je antwoord op vraag 4 was " + Question4Text + "<br> Je antwoord op vraag 5 was " + Question5Text);	
 				
 				if(Question1Answer==1){
 					
