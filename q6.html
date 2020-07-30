@@ -20,6 +20,7 @@
 				var Question4Answer = 0;
 				var Question5Answer = 0;
 				var Question6Answer = 0;
+				var QuestionCounter = 0;
 		
 				cookiearray = AllAnswers.split(';');
 		
@@ -32,30 +33,36 @@
 					
 					if(QuestionB==1){
 					Question1Answer=AnswerB;
-					alert(Question1Answer);
+					
 					}
 					
 					if(QuestionB==2){
 					Question2Answer=AnswerB;
-					alert(Question2Answer);
+					
 					}
 					
 					if(QuestionB==3){
 					Question3Answer=AnswerB;	
-					alert(Question3Answer);
+					
 					}
 					
 					if(QuestionB==4){
 					Question4Answer=AnswerB;	
-					alert(Question4Answer);
+					
 					}
 					
 					if(QuestionB==5){
 					Question5Answer=AnswerB;	
-					alert(Question5Answer);
+				
 					}						
 					
-					document.write ("Op deze vraag : " + QuestionB + " gaf je dit antwoord : " + AnswerB + "<div>");					
+					document.write ("Op deze vraag : " + QuestionB + " gaf je dit antwoord : " + AnswerB + "<div>");	
+					
+					if(QuestionCounter<5){
+					QuestionCounter+=1;
+					} else {
+						alert("All questions counted!");
+					}
 				}
 		
 			 function ShowCookie() {
