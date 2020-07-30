@@ -27,8 +27,8 @@
 				for(var i=0; i<cookiearray.length; i++) 
 				{
 					QuestionCounter+=1;
-				  Question = cookiearray[i].split('=')[0];
-				  Answer = cookiearray[i].split('=')[1];
+				    Question = cookiearray[i].split('=')[0];
+				    Answer = cookiearray[i].split('=')[1];
 					var QuestionB = parseInt(Question);	
 					var AnswerB = parseInt(Answer);	
 					
@@ -58,13 +58,20 @@
 					}						
 					
 					document.write ("Op deze vraag : " + QuestionB + " gaf je dit antwoord : " + AnswerB + "<div>");	
-					alert(QuestionCounter);
+					
+					if(QuestionCounter==5){
+						WriteResults();
+					}
 					
 				}
 		
 			 function ShowCookie() {
   			 alert(document.cookie);
-			 }			
+			 }
+		
+			function WriteResults() {
+			alert("Success!");
+			}
 			 
       	</script>   
 	</h2>
