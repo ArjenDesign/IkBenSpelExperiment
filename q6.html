@@ -22,18 +22,40 @@
 				var Question6Answer = 0;
 		
 				cookiearray = AllAnswers.split(';');
+		
 				for(var i=0; i<cookiearray.length; i++) 
 				{
 				  Question = cookiearray[i].split('=')[0];
 				  Answer = cookiearray[i].split('=')[1];
-					var QuestionB = decodeURIComponent(Question);
+					var QuestionB = parseInt(Question);	
 					var AnswerB = parseInt(Answer);	
-					if(AnswerB>0){
-					alert("Vraag nummer: " + QuestionB);
-						 document.write ("Op deze vraag : " + QuestionB + " gaf je dit antwoord : " + AnswerB + "<div>");
-						}
-				 
 					
+					if(QuestionB==1){
+					Question1Answer=AnswerB;
+					alert(Question1Answer);
+					}
+					
+					if(QuestionB==2){
+					Question2Answer=AnswerB;
+					alert(Question2Answer);
+					}
+					
+					if(QuestionB==3){
+					Question3Answer=AnswerB;	
+					alert(Question3Answer);
+					}
+					
+					if(QuestionB==4){
+					Question4Answer=AnswerB;	
+					alert(Question4Answer);
+					}
+					
+					if(QuestionB==5){
+					Question5Answer=AnswerB;	
+					alert(Question5Answer);
+					}						
+					
+					document.write ("Op deze vraag : " + QuestionB + " gaf je dit antwoord : " + AnswerB + "<div>");					
 				}
 		
 			 function ShowCookie() {
