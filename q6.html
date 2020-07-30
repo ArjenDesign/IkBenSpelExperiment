@@ -26,6 +26,7 @@
 		
 				for(var i=0; i<cookiearray.length; i++) 
 				{
+					QuestionCounter+=1;
 				  Question = cookiearray[i].split('=')[0];
 				  Answer = cookiearray[i].split('=')[1];
 					var QuestionB = parseInt(Question);	
@@ -57,12 +58,8 @@
 					}						
 					
 					document.write ("Op deze vraag : " + QuestionB + " gaf je dit antwoord : " + AnswerB + "<div>");	
+					alert(QuestionCounter);
 					
-					if(QuestionCounter<5){
-					QuestionCounter+=1;
-					} else {
-						alert("All questions counted!");
-					}
 				}
 		
 			 function ShowCookie() {
